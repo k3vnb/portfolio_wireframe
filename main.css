@@ -135,3 +135,65 @@
         line-height: 32px;
     }
 }
+
+/* projects page */
+
+.projects-section {
+    height: 100vh;
+}
+
+.projects-section-hero {
+    height: 30%;
+    background-color: lightgrey;
+    padding: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.projects-section-main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-outer {
+    border: 1px solid black;
+    background-color: lightgrey;
+    height: 200px;
+    padding: 2%;
+    display: flex;
+
+}
+
+.project-image-container {
+    height: 100%;
+    background-color: grey;
+    width: 45%;
+}
+
+.project-info-container {
+    text-align: center;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-name {
+    font-fize: 20px;
+}
+
+.project-description {
+    font-size: 12px;
+}
+
+.project-link a {
+    width: 80%;
+}
+
+.project-link a button{
+    border: .5px solid black;
+    width: 80%;
+    height: 25px;
+}
