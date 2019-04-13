@@ -139,7 +139,7 @@
 /* projects page */
 
 .projects-section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .projects-section-hero {
@@ -154,6 +154,7 @@
 .projects-section-main-content {
     display: flex;
     flex-direction: column;
+    padding: 10%;
 }
 
 .project-card-outer {
@@ -162,7 +163,7 @@
     height: 200px;
     padding: 2%;
     display: flex;
-
+    margin-bottom: 5%;
 }
 
 .project-image-container {
@@ -181,19 +182,88 @@
 }
 
 .project-name {
-    font-fize: 20px;
+    font-size: 20px;
 }
 
 .project-description {
     font-size: 12px;
 }
 
-.project-link a {
-    width: 80%;
+.project-link button a {
+    width: 100%;
+    height: 100%;
 }
 
-.project-link a button{
+.project-link button{
     border: .5px solid black;
-    width: 80%;
+    width: 120px;
+    height: 35px;
+}
+
+@media screen and (min-width: 420px){
+    .project-link button{ 
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 760px){
+    .projects-section-main-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .project-card-outer {
+        width: 30%;
+        flex-direction: column;
+        height: 400px;
+    }
+    .project-image-container {
+        width: 100%;
+        height: 50%;
+    }
+    .project-info-container {
+        width: 100%;
+        height: 50%;
+    }
+
+}
+
+/* Contact Section */
+
+.contacts-section {
+    min-height: 100vh;
+}
+
+.contacts-section-hero {
+    height: 30%;
+    background-color: lightgrey;
+    padding: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.contacts-section-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.contacts-section-main-content > div {
+    width: 50%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/* footer */
+
+footer {
+    background-color: grey;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     height: 25px;
+    padding: 1%;
 }
