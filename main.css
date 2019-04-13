@@ -88,10 +88,13 @@
 
 /* About Section */
 
+#about {
+    padding: 150px 8%;
+}
+
 .about-section-container {
-    height: 100vh;
-    margin-top: 60px;
-    padding: 0% 8%;
+    min-height: 100vh;
+    margin-top: 50px;
 }
 
 .about-section-top-line {
