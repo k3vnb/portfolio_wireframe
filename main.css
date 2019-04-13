@@ -37,29 +37,101 @@
 
 .splash-page-main-content {
     height: 50%;
-    max-height: 400px;
+    max-height: 500px;
     width: 80%;
     max-width: 600px;
     background-color: white;
     border: 1px solid black;
     padding: 5%;
     text-align: center;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
 }
 
 .splash-page-main-content h1 {
     font-size: 40px;
-    margin: 9%;
+    margin: 0%;
 }
 
+
 .splash-page-main-content .page-links {
+    height: 30%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     margin-top: 2%;
 }
 
 .splash-page-main-content .page-links a {
     border: .5px solid black;
     padding: 1% 2%;
-    width: 25%;
+    width: 80%;
     background-color: lightgrey;
+}
+@media screen and (min-width: 550px){
+    .splash-page-main-content .page-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2%;
+    }
+    
+    .splash-page-main-content .page-links a {
+        border: .5px solid black;
+        padding: 1% 2%;
+        width: 25%;
+        background-color: lightgrey;
+    }
+}
+
+/* About Section */
+
+.about-section-container {
+    height: 100vh;
+    margin-top: 60px;
+    padding: 0% 8%;
+}
+
+.about-section-top-line {
+    text-align: center;
+    line-height: 36px;
+}
+
+.about-section-top-line-left {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+.about-section-top-line-right {
+    font-size: 20px;
+}
+
+.about-section-bottom-line {
+    text-align: justify;
+    margin-top: 50px;
+    line-height: 22px;
+}
+
+@media screen and (min-width: 550px){
+    .about-section-container {
+        padding: 0% 15%; 
+    }
+    .about-section-top-line {
+        display: flex;
+        align-items: center;
+    }
+    .about-section-top-line div {
+        width: 50%;
+    }
+    .about-section-top-line-left {
+        font-size: 125px;
+    }
+    .about-section-top-line-right {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .about-section-bottom-line {
+        line-height: 32px;
+    }
 }
